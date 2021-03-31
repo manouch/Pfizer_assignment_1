@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    /* position: fixed; */
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    /* position: fixed; */
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    /* margin: 15px; */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+      max-width: 97%;
+      min-height: 300px;
+      position: -webkit-sticky;
+      position: sticky;
+      /* top: 0;  */
+     bottom: 0;
+      background-color: grey;
+      border: 1px solid black;
+      border-radius: 15px;
+      margin: 5px;
+      transform-origin: 50% 100%;
+    }
+
+    /* .column  */
+
+    
+    /* Z-index column div position  */
+    .z-index-1 {
+      z-index: 4;
+    }
+    .z-index-2 {
+      z-index: 3;
+    }
+    .z-index-3 {
+      z-index: 2;  
+    }
+    .z-index-4 {
+      z-index: 1;  
+    }
+
+
+  
+  }
