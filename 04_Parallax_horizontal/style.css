@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+.container {
+    height: 150vh;
+}
+
+header, main, footer {
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3em;
+}
+
+header, footer {
+    background-color: black;
+    color: white;
+}
+
+main {
+    background-image: url("https://www.msjallday.com/wp-content/uploads/2019/08/KC_logo1.png");
+    background-position: 0px -100px;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    width: 100%;
+    /* max-width: 100%; */
+    /* width: 100%; */
+}

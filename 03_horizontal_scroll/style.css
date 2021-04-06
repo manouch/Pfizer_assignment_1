@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    flex-direction: row;
+    width: 400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.one {
+    /* background: #a2d8fb; */
+    background: url('https://static2.karate.com/resized/730x410/219_1605617782173_501620560_ep8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.two {
+    /* background: #67b7ec; */
+    background: url('https://blackbeltmag.com/media-library/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8yMzUyMzY2My9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTYyNjI1Mjc0NH0.XLxorKhjq8ISQmd712wHEAcgR5OyuOM5dkpQYbq7L60/image.jpg?width=1200&coordinates=0%2C100%2C0%2C100&height=600');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.three {
+    /* background: #1657cf; */
+    background: url('https://mymmanews.com/wp-content/uploads/2019/05/karate-combat-1024x449.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.four {
+    /* background: #0a2b68; */
+    background: url('https://i.ytimg.com/vi/JOye9bYFcRM/maxresdefault.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
