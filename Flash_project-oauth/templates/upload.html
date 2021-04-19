@@ -1,0 +1,307 @@
+{% extends 'base.html' %}
+{% block head %}
+{% endblock %}
+
+{% block body %}
+
+<div class="container" >
+  <div class="jumbotron">
+    <h1>Jinja Template</h1>
+    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
+    responsive, mobile-first projects on the web.</p>
+  </div>
+<!--  <p>This is some text.</p>-->
+<!--  <p>This is another text.</p>-->
+</div>
+
+<div class="container">
+    <div class="row">
+<h2 style="text-align: center">Select file to upload</h2>
+        <br>
+
+<form>
+    <div class="col-sm-6">
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Source Language:</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option value="auto">Auto-Detect</option>
+        <option value="en">English</option>
+        <option value="ja">Japanese</option>
+        <option value="zh">Chinese</option>
+        <option value="fr">French</option>
+    </select>
+  </div>
+        </div>
+<div class="col-sm-6">
+<div class="form-group">
+<label for="exampleFormControlSelect1">Target Language:</label>
+<select class="form-control" id="exampleFormControlSelect2">
+  <option value="en">English</option>
+        <option value="ja">Japanese</option>
+        <option value="zh">Chinese</option>
+        <option value="fr">French</option>
+</select>
+</div></div>
+
+<div class="col-md-12">
+  <br><br>
+  <div class="form-group">
+    <label for="exampleFormControlFile1">File input</label>
+    <input type="file" class="form-control-file bg-primary" id="exampleFormControlFile1">
+  </div>
+    <p>
+		<input class="btn btn-primary btn-block" type="submit" value="Upload & Translate">
+	</p>
+    </div>
+
+</form>
+
+<div class="container" style="margin-top: 35px">
+        <h4>Select Number of Rows</h4>
+        <div class="form-group">
+          <select
+            name="state"
+            id="maxRows"
+            class="form-control"
+            style="width: 150px"
+          >
+            <option value="5000">Show All</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+            <option value="75">75</option>
+            <option value="100">100</option>
+          </select>
+        </div>
+        <table id="mytable" class="table table-bordered table-striped">
+          <thead class="bg-primary">
+            <tr>
+              <th>File Name</th>
+              <th>Id</th>
+              <th>Date</th>
+              <th>Status</th>
+              <th>Download</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>C# Sharp</td>
+                <td>1</td>
+                <td>2015-03-09T14:46:54.678-04:00</td>
+                <td>Stable</td>
+                <td>Link 1</td>
+            </tr>
+            <tr>
+              <td>HTML 5</td>
+                <td>2</td>
+                <td>2015-03-09T14:46:55.678-04:00</td>
+                <td>Offline</td>
+                <td>Link 10</td>
+            </tr>
+          <tr>
+              <td>JavaScript</td>
+                <td>3</td>
+                <td>2015-03-09T14:46:56.678-04:00</td>
+                <td>True</td>
+                <td>Link 12</td>
+            </tr>
+          <tr>
+              <td>CSS3</td>
+                <td>4</td>
+                <td>2015-03-09T01:46:57.678-04:00</td>
+                <td>True</td>
+                <td>Link 15</td>
+            </tr>
+          <tr>
+              <td>jQuery</td>
+                <td>5</td>
+                <td>2015-03-09T12:46:57.678-04:00</td>
+                <td>True</td>
+                <td>Link 1</td>
+            </tr>
+          <tr>
+              <td>Angular</td>
+                <td>6</td>
+                <td>2015-03-11T14:41:57.678-04:00</td>
+                <td>True</td>
+                <td>Link 1</td>
+            </tr>
+          <tr>
+              <td>ASP.Net</td>
+                <td>7</td>
+                <td>2015-03-10T02:46:57.678-04:00</td>
+                <td>False</td>
+                <td>Link 14</td>
+            </tr>
+          <tr>
+              <td>NodeJS</td>
+                <td>8</td>
+                <td>2015-02-09T14:46:57.678-04:00</td>
+                <td>True</td>
+                <td>Link 1</td>
+            </tr>
+          <tr>
+              <td>Bootstrap</td>
+                <td>9</td>
+                <td>2015-02-09T14:46:56.678-04:00</td>
+                <td>True</td>
+                <td>Link 122</td>
+            </tr>
+          <tr>
+              <td>Express</td>
+                <td>10</td>
+                <td>4/2/20</td>
+                <td>True</td>
+                <td>Link 21</td>
+            </tr>
+          <tr>
+              <td>MongoDB</td>
+                <td>11</td>
+                <td>4/2/20</td>
+                <td>False</td>
+                <td>Link 11</td>
+            </tr>
+          <tr>
+              <td>Heroku</td>
+                <td>12</td>
+                <td>4/2/20</td>
+                <td>True</td>
+                <td>Link 1</td>
+            </tr>
+          <tr>
+              <td>SQL Server</td>
+                <td>13</td>
+                <td>4/2/20</td>
+                <td>True</td>
+                <td>Link 1</td>
+            </tr>
+          <tr>
+              <td>Firebase</td>
+                <td>14</td>
+                <td>4/2/20</td>
+                <td>False</td>
+                <td>Link 1</td>
+            </tr>
+          <tr>
+              <td>Entity</td>
+                <td>15</td>
+                <td>4/2/20</td>
+                <td>Stable</td>
+                <td>Link 1</td>
+            </tr>
+          <tr>
+              <td>In God We Trust</td>
+                <td>16</td>
+                <td>4/2/20</td>
+                <td>Offline</td>
+                <td>Link 1</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="pagination-container">
+          <nav>
+            <ul class="pagination"></ul>
+          </nav>
+        </div>
+      </div>
+
+
+
+</div></div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+<!--pagination -->
+
+  var table = "#mytable";
+      $("#maxRows").on("change", function () {
+        $(".pagination").html("");
+        var trnum = 0;
+        var maxRows = parseInt($(this).val());
+        var totalRows = $(table + " tbody tr").length;
+        $(table + " tr:gt(0)").each(function () {
+          trnum++;
+          if (trnum > maxRows) {
+            $(this).hide();
+          }
+          if (trnum <= maxRows) {
+            $(this).show();
+          }
+        });
+        if (totalRows > maxRows) {
+          var pagenum = Math.ceil(totalRows / maxRows);
+          for (var i = 1; i <= pagenum; ) {
+            $(".pagination")
+              .append(
+                '<li data-page="' +
+                  i +
+                  '">\<span>' +
+                  i++ +
+                  '<span class="sr-only">(current)</span></span>\</li>'
+              )
+              .show();
+          }
+        }
+        $(".pagination li:first-child").addClass("active");
+        $(".pagination li").on("click", function () {
+          var pageNum = $(this).attr("data-page");
+          var trIndex = 0;
+          $(".pagination li").removeClass("active");
+          $(this).addClass("active");
+          $(table + " tr:gt(0)").each(function () {
+            trIndex++;
+            if (
+              trIndex > maxRows * pageNum ||
+              trIndex <= maxRows * pageNum - maxRows
+            ) {
+              $(this).hide();
+            } else {
+              $(this).show();
+            }
+          });
+        });
+      });
+      $(function () {
+        $("table tr:eq(0)").prepend("<th>ID</th>");
+        var id = 0;
+        $("table tr:gt(0)").each(function () {
+          id++;
+          $(this).prepend("<td>" + id + "</td>");
+        });
+      });
+
+<!--      Sorting by data -->
+
+$('th').click(function(){
+    var table = $(this).parents('table').eq(0)
+    var rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()))
+    this.asc = !this.asc
+    if (!this.asc){rows = rows.reverse()}
+    for (var i = 0; i < rows.length; i++){table.append(rows[i])}
+})
+function comparer(index) {
+    return function(a, b) {
+        var valA = getCellValue(a, index), valB = getCellValue(b, index)
+        return $.isNumeric(valA) && $.isNumeric(valB) ? valA - valB : valA.toString().localeCompare(valB)
+    }
+}
+function getCellValue(row, index){ return $(row).children('td').eq(index).text() }
+
+
+</script>
+
+
+
+{% endblock %}
+
+
+
+{% block javascript %}
+    <script src="{{ url_for('static',filename='script/app.js') }}"></script>
+{% endblock %}
